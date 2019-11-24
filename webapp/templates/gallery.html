@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load webapp_tags %}
+
+{% block content %}
+
+<h2>Gallery</h2>
+
+  {% for name in image_names %}
+    <div class="image">
+      <a href="{{ imageURL }}{{ name }}" align=center>
+          <img src="{{ imageURL }}{{ name }}"
+          width=700px>
+      </a>
+    </div>
+  {% endfor %}
+
+{% endblock %}

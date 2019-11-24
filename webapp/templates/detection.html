@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Upload image for face detection</h2>
+<!-- image upload start-->
+ <form method="post" enctype="multipart/form-data">
+     {% csrf_token %}
+     {{ form.as_p }}
+     <button type="submit">Upload</button>
+ </form>
+
+ {% if post %}
+ <img src="{{ post.document.url }}" class="image">
+ <p>File uploaded at: <a href="{{ post.document.url }}">{{ post.document }}</a></p>
+ {% endif %}
+
+ <p><a href="{% url 'home' %}">Return to home</a></p>
+<!-- image upload end -->
+
+{% endblock %}

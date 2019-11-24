@@ -1,0 +1,135 @@
+body{
+  background-color: white;
+  height: 100%;
+  margin: 0;
+  font-family: verdana;
+}
+
+p{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  border: 1px solid #ccc;
+  color: black;
+  background-color: #B0E0E6;
+  padding: 5px;
+}
+
+h2{
+  text-align: center;
+  color: black;
+}
+
+header{
+  margin: 5px;
+  background-color: #F0FFF0;
+  margin-top: -15px;
+  margin-bottom: -20px;
+}
+
+article{
+  align-items: center;
+  align-self: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #F0FFF0;
+  margin: 5px;
+  min-height: calc(100vh - 190px);
+  margin-top: 120px;
+  margin-bottom: 55px;
+}
+
+footer{
+  border: 1px solid #ccc;
+  background-color: #E0FFFF;
+  height: 50px;
+  text-align: center;
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  width: calc(100% - 12px);
+}
+
+input[type=file], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type=submit] {
+  width: 100%;
+  background-color: #F5F5F5;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+
+input[type=submit]:hover {
+  background-color: white;
+}
+
+/* Menu */
+nav{
+  height: 50px;
+  background-color: #E0FFFF;
+  margin-top: -15px
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f3f3f324;
+}
+
+
+#left{
+  float: left;
+}
+
+#right{
+  float: right;
+}
+
+nav ul li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+#menu{
+  position: fixed;
+  right: 0px;
+  top: 0;
+  width: calc(100% - 10px);
+}
+
+.image{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 700px;
+}
