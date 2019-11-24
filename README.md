@@ -1,2 +1,2 @@
-# face_detection
-detect faces on images
+# Django Face Detection
+Web app designed to detect faces on images
